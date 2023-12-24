@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>Exemple 2 API lecteur audio</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+    <!--<script src="js/script.js"></script>-->
+
+    <!--<script type="text/javascript" src="https://unpkg.com/butterchurn"></script>
+    <script type="text/javascript" src="https://unpkg.com/butterchurn-presets"></script>
+    <script type="text/javascript" src="https://unpkg.com/butterchurn-presets/lib/butterchurnPresetsExtra.min.js"></script>
+    -->
+    <script src="components/myAudioPlayer.js" type="module"></script>
+    <script src="components/launchpad.js" type="module"></script>
+    <script src="components/butterchurn_visualizer.js" type="module"></script>
+    <script src="components/webaudio_controls.js" type="module"></script>
+    <script src="components/settings.js" type="module"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/lamejs@1.2.0/lame.all.js"></script>
+
+    <script src="https://unpkg.com/butterchurn"></script>
+    <script src="https://unpkg.com/butterchurn-presets"></script>
+    <script src="https://unpkg.com/butterchurn-presets/lib/butterchurnPresetsExtra.min.js"></script>
+
+
+</head>
+
+<body>
+    <h1>Sipotifaille</h1>
+    <!--<audio src="./assets/audio/CleanGuitarRiff.mp3" controls id="player"></audio>
+    <br>
+    <button id="playBtn">Play</button> &nbsp 
+    <button id="pauseBtn">Pause</button>-->
+    <!--components/audio/discomaghreb.mp3,-->
+    <div id="visualizer">
+        <my-audio-player id="audioPlayer"
+            playlist="components/audio/CleanGuitarRiff.mp3, components/audio/ls.mp3, components/audio/cps.mp3"></my-audio-player>
+            <audio-recorder></audio-recorder>
+        <my-launchpad></my-launchpad>
+
+    
+    </div>
+    <!--<my-butterchurn></my-butterchurn>-->
+</body>
+
+</html>
