@@ -1,4 +1,4 @@
-import Butterchurn from '../node_modules/butterchurn/lib/butterchurn.js';
+import Butterchurn from './libs/butterchurn.js';
 
 const butterchurnInstance = new Butterchurn();
 
@@ -48,4 +48,4 @@ class ButterchurnVisualizer extends HTMLElement {
     }
 }
 
-customElements.define('butterchurn-visualizer', ButterchurnVisualizer);
+customElements.define('my-butterchurn', ButterchurnVisualizer);

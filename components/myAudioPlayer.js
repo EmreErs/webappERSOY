@@ -225,7 +225,6 @@ export class myAudioPlayer extends HTMLElement {
 
         elements.forEach((e) => {
             let elementPath = e.getAttribute('src');
-            // if the image path isn't already absolute, make it absolute
             if (elementPath.indexOf('://') === -1)
                 e.src = getBaseURL() + '/' + elementPath;
         });

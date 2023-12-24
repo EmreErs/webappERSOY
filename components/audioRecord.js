@@ -31,7 +31,7 @@ class AudioRecorder extends HTMLElement {
         navigator.mediaDevices
             .getUserMedia({ audio: true })
             .then((stream) => {
-                this.recorder = stream; // Assign the stream directly
+                this.recorder = stream;
             })
             .catch((error) => {
                 console.error('Error initializing recorder:', error);
@@ -91,11 +91,9 @@ class AudioRecorder extends HTMLElement {
         downloadLink.download = 'recorded_audio.mp3';
         downloadLink.click();
 
-        // Créer un formulaire avec le fichier MP3
         const formData = new FormData();
         formData.append('audio', mp3Blob, 'recorded_audio.mp3');
 
-        // Envoyer le formulaire au serveur avec Fetch
         fetch('C:\Users\emree\Documents', {
             method: 'POST',
             body: formData
